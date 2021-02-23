@@ -1,0 +1,99 @@
+body {
+    font-family: sans-serif;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background-color: rgb(34, 34, 34);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button{
+      -webkit-appearance: none;
+      margin: 0;
+  }
+  
+  .base-timer {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .base-timer__svg {
+    transform: scaleX(-1);
+  }
+  
+  .base-timer__circle {
+    fill: none;
+    stroke: none;
+  }
+  
+  .base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: white;
+  }
+  
+  .base-timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+  }
+  
+  .base-timer__path-remaining.green {
+    color: rgb(65, 184, 131);
+  }
+  
+  .base-timer__path-remaining.orange {
+    color: orange;
+  }
+  
+  .base-timer__path-remaining.red {
+    color: red;
+  }
+  
+  .base-timer__label {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+  button{
+      border-radius: 100%;
+      width:60px;
+      height: 60px;
+      outline: none;
+      background-color: rgb(26, 209, 139);
+      border:none;
+      color:white;
+      font-weight: bolder;
+      /* border-width: 3px;
+      border-color: rgb(255, 255, 255);
+      border-style: solid; */
+  }
+  #btn:hover{
+    background-color: rgb(26, 209, 139);
+    font-size: large;
+
+  }
+  input{
+      outline: none;
+      border:none;
+      border-radius: 30px;
+      font-size: 20px;
+      width:40px;
+      background-color: rgb(74, 130, 233);
+      color:white;
+      font-weight: bolder;
+      padding: 10px;
+  }
